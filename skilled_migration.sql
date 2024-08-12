@@ -40,5 +40,7 @@ select wb_income, skill_group_category, avg(net_per_10k_2015) as "2015 Avg Migra
 select country_name, skill_group_category, sum(net_per_10k_2019) from skill_migration group by country_name, skill_group_category having (skill_group_category = 'Tech Skills') order by sum(net_per_10k_2019) desc; 
 
 
+
+
 /*Write a query to find the difference in net migration rates between
 Tech Skills and Business Skills for each country and year*/
